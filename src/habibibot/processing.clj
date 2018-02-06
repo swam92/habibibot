@@ -58,6 +58,11 @@
                             data
                             (recur (conj data queue-contents)))))))
 
+;;TODO:
+;; function to call load-db,
+;; - infinite loop of sleep x minutes, wake, load-db
+;; - could also associate load-db with a route for manual intervention
+
 (process-data-async output-chan)
 
 
